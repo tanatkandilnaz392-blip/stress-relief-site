@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Stress Relief Pro</title>
+
+<style>
+body {
+  font-family: Arial;
+  margin: 0;
+  background: #f2f7ff;
+  text-align: center;
+}
+
+header {
+  background: #4a90e2;
+  color: white;
+  padding: 20px;
+}
+
+button {
+  padding: 10px 15px;
+  margin: 5px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.card {
+  background: white;
+  margin: 15px auto;
+  padding: 15px;
+  width: 80%;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+</style>
+</head>
+
+<body>
+
+<header>
+<h1 id="title">Stress Relief Website</h1>
+
+<button onclick="setLang('en')">EN</button>
+<button onclick="setLang('kz')">KZ</button>
+<button onclick="setLang('ru')">RU</button>
+</header>
+
+<div class="card">
+<h2>🧘 Meditation</h2>
+<p id="meditation">Relax your mind with meditation.</p>
+</div>
+
+<div class="card">
+<h2>🎧 Music</h2>
+<p id="music">Listen to calming 8D & kobyz sounds.</p>
+</div>
+
+<div class="card">
+<h2>🌬 Breathing</h2>
+<p id="breathing">Inhale slowly... exhale slowly...</p>
+</div>
+
+<div class="card">
+<h2>🎮 Games</h2>
+<p id="games">Play simple relaxation games.</p>
+</div>
+
+<div class="card">
+<h2>🤖 AI Support</h2>
+<p id="ai">I am here to help you 💙</p>
+</div>
+
+<script>
+
+function setLang(lang){
+
+if(lang === "en"){
+document.getElementById("title").innerText = "Stress Relief Website";
+document.getElementById("meditation").innerText = "Relax your mind with meditation.";
+document.getElementById("music").innerText = "Listen to calming 8D & kobyz sounds.";
+document.getElementById("breathing").innerText = "Inhale slowly... exhale slowly...";
+document.getElementById("games").innerText = "Play simple relaxation games.";
+document.getElementById("ai").innerText = "I am here to help you 💙";
+}
+
+if(lang === "kz"){
+document.getElementById("title").innerText = "Стрессті азайту сайты";
+document.getElementById("meditation").innerText = "Медитация арқылы демалыңыз.";
+document.getElementById("music").innerText = "8D музыка мен қобыз тыңдаңыз.";
+document.getElementById("breathing").innerText = "Терең дем ал... жай шығар...";
+document.getElementById("games").innerText = "Жеңіл ойындар ойнаңыз.";
+document.getElementById("ai").innerText = "Мен сізге көмектесемін 💙";
+}
+
+if(lang === "ru"){
+document.getElementById("title").innerText = "Сайт для снижения стресса";
+document.getElementById("meditation").innerText = "Расслабьтесь с медитацией.";
+document.getElementById("music").innerText = "Слушайте 8D и кобыз.";
+document.getElementById("breathing").innerText = "Вдох... выдох...";
+document.getElementById("games").innerText = "Игры для расслабления.";
+document.getElementById("ai").innerText = "Я здесь, чтобы помочь 💙";
+}
+}
+
+</script>
+
+</body>
+</html>
